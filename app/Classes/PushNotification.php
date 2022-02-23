@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 
 class PushNotification
 {
-    private $API_KEY = 'AAAAYFdkeUs:APA91bHc-QPZIQS2RfopjUZMzTL9DC-phayMhxTWVcyp6KZvWnROf3tW5rm61XFsrbMMK25-Y4TuyMBk8n-49wgyGfTBDs-YH7BWWhPLEeGbNoG9JO_HCAG3REF80s3wVLoFKKlqzhCH';
+    private $API_KEY = 'XXX';
     public function sendPush($user_id, $user_type, $message, $title, $payload)
     {
         $target = array();

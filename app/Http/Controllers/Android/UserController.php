@@ -862,7 +862,7 @@ class UserController extends Controller
                 'status' => $androidResponse->getStatus(0, 'Sorry! User id is required.'),
             ]);
         }
-        $API_KEY = 'AAAAZk2v7Jk:APA91bGx-3bdm69JGNpA4SaWDgifNkw5p3hKLybyuBHXDSZIjirrr2NngQJm62LRXB-UM6hAnmVKvgCUqtnNsxhn91XRavxP8jTy_Bb13c3oNxvaUJ1a6nqZlXuzXGjcIiOut4j5qbFP';
+        $API_KEY = 'XXX';
         $url = 'https://fcm.googleapis.com/fcm/send';
         $fields = array();
         $fields['priority'] = "high";
