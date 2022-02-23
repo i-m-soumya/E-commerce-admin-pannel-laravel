@@ -1,0 +1,399 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+/* color settings */
+
+.text-deepred {
+    color: red;
+}
+
+.bg-app_color {
+    background-color: #f8204a;
+}
+
+.btn-login {
+    width: 200px;
+}
+
+.bg-blue-dark {
+    background-color: #265394;
+}
+
+.bg-blue-light {
+    background-color: #0747a6;
+}
+
+
+/* end color settings */
+
+
+/* others */
+
+.card-customer {
+    border-right: 0px solid #ccc;
+    box-shadow: 3px 6px #ccc;
+}
+
+.user-tabs {
+    width: 150px;
+}
+
+
+/* end others */
+
+
+/* add product */
+
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: -4px;
+    z-index: 1;
+    top: -4px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input+label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input+label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-edit input+label:after {
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.view_product_modal_btn_close {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    z-index: 1;
+    top: 6px;
+}
+
+
+/* end add product */
+
+
+/* settings tabs */
+
+.ctab>.nav-tabs {
+    border: none;
+    margin: 0px;
+}
+
+.ctab>.nav-tabs>li>a {
+    border: 0;
+    margin-right: 0;
+    color: #737373;
+}
+
+.ctab>.nav-tabs>.nav-item>a.active {
+    border-bottom: 4px solid #527bb9;
+    position: relative;
+}
+
+.ctab>.nav-tabs.nav-item>a.active {
+    color: red;
+}
+
+.stock-icon {
+    font-weight: 20;
+    font-size: 2vw;
+    line-height: 10%;
+}
+
+.border-column-bottom {
+    border-bottom: 1px solid #527bb9;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/* end settings tabs */
+
+.btn-width-120 {
+    width: 120px;
+}
+
+
+/* toggle switch button */
+
+.custom-control-input~.custom-control-label::before {
+    background-color: red !important;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    /* when the button is toggled off
+it is still in focus and a violet border will appear */
+    border-color: red !important;
+    background-color: red !important;
+    /* box shadow is blue by default
+but we do not want any shadow hence we have set
+all the values as 0 */
+    box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+}
+
+
+/*sets the background color of
+		switch to violet when it is checked*/
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: green !important;
+    background-color: green !important;
+}
+
+
+/* end of toggle switch button */
+
+
+/*toggle switch button size */
+
+.custom-switch.custom-switch-sm .custom-control-label {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.custom-switch.custom-switch-sm .custom-control-label::before {
+    height: 1rem;
+    width: calc(1rem + 0.75rem);
+    border-radius: 2rem;
+}
+
+.custom-switch.custom-switch-sm .custom-control-label::after {
+    width: calc(1rem - 4px);
+    height: calc(1rem - 4px);
+    border-radius: calc(1rem - (1rem / 2));
+}
+
+.custom-switch.custom-switch-sm .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(calc(1rem - 0.25rem));
+}
+
+.custom-switch.custom-switch-md .custom-control-label {
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.custom-switch.custom-switch-md .custom-control-label::before {
+    height: 1.5rem;
+    width: calc(2rem + 0.75rem);
+    border-radius: 3rem;
+}
+
+.custom-switch.custom-switch-md .custom-control-label::after {
+    width: calc(1.5rem - 4px);
+    height: calc(1.5rem - 4px);
+    border-radius: calc(2rem - (1.5rem / 2));
+}
+
+.custom-switch.custom-switch-md .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(calc(1.5rem - 0.25rem));
+}
+
+.custom-switch.custom-switch-lg .custom-control-label {
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+
+.custom-switch.custom-switch-lg .custom-control-label::before {
+    height: 2rem;
+    width: calc(3rem + 0.75rem);
+    border-radius: 4rem;
+}
+
+.custom-switch.custom-switch-lg .custom-control-label::after {
+    width: calc(2rem - 4px);
+    height: calc(2rem - 4px);
+    border-radius: calc(3rem - (2rem / 2));
+}
+
+.custom-switch.custom-switch-lg .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(calc(2rem - 0.25rem));
+}
+
+.custom-switch.custom-switch-xl .custom-control-label {
+    padding-left: 4rem;
+    padding-bottom: 2.5rem;
+}
+
+.custom-switch.custom-switch-xl .custom-control-label::before {
+    height: 2.5rem;
+    width: calc(4rem + 0.75rem);
+    border-radius: 5rem;
+}
+
+.custom-switch.custom-switch-xl .custom-control-label::after {
+    width: calc(2.5rem - 4px);
+    height: calc(2.5rem - 4px);
+    border-radius: calc(4rem - (2.5rem / 2));
+}
+
+.custom-switch.custom-switch-xl .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(calc(2.5rem - 0.25rem));
+}
+
+
+/* end of toggle switch button size */
+
+.product_images_view_size {
+    height: 100px;
+    width: 100px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.highcharts-table-caption {
+    display: none;
+}
+
+
+/* Featured image  */
+
+.featured_image_upload {
+    position: relative;
+    max-width: 400px;
+}
+
+.featured_image_upload .featured_image_edit {
+    position: absolute;
+    right: -12px;
+    z-index: 1;
+    top: -12px;
+}
+
+.featured_image_upload .featured_image_edit input {
+    display: none;
+}
+
+.featured_image_upload .featured_image_edit input+label {
+    display: inline-block;
+    width: 28px;
+    height: 27px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.featured_image_upload .featured_image_edit input+label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.featured_image_upload .featured_image_edit input+label:after {
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.featured_image_upload .featured_image_preview {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.featured_image_upload .featured_image_preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
